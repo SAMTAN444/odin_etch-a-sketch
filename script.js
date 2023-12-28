@@ -84,7 +84,7 @@ chooseColor.addEventListener('input', function(){
             event.target.style.backgroundColor = newColor;
         })
     }
-})
+});
 
 
 createGrid();
