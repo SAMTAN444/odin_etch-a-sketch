@@ -13,17 +13,17 @@ for (let i = 0; i < 256; i++) {
 
 function removeAllChildNodes(parent){
     while(parent.firstChild){
-        parent.removeChild(parent.firstChild)
+        parent.removeChild(parent.firstChild);
     }
 }
 
-function getRandomColor() {
+function getRandomColor(){
     let letters = '0123456789ABCDEF';
     let color = '#';
-    for (var i =0; i < 6; i++) {
+    for (var i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
+      }
+      return color;
 }
 
 const slider = document.querySelector('#slider')
@@ -50,10 +50,10 @@ reset.addEventListener('click', function(){
     for (let i = 0; i < val*val; i++) {
         cell[i].style.backgroundColor = 'white';
     }
-})
+});
 
 const rgb = document.querySelector('#rgb');
-rgb.addEventListener('click', function() {
+rgb.addEventListener('click', function(){
     let val = document.getElementById('slider').value;
     let cell = grid.children;
     for (let i = 0; i < val*val; i++) {
@@ -85,6 +85,7 @@ chooseColor.addEventListener('input', function(){
         })
     }
 });
+
 
 
 createGrid();
